@@ -26,12 +26,12 @@ namespace Loops_DeBord_Joshua
         static int SumOfDigits(string number)
         {
             int sum = 0;
-            foreach (char digit in number)
+            foreach(char digit in number)
             {
                 sum += (int)Char.GetNumericValue(digit);
             }
 
-            )
+            
         }
     }
 }
