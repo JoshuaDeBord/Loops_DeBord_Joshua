@@ -9,6 +9,10 @@ namespace Loops_DeBord_Joshua
             Console.WriteLine("Why do you want to make games?");
             string answer1 = Console.ReadLine();
             Console.WriteLine($"The sentence, \"{answer1}\" has {CountNumberOfSpaces(answer1)} spaces in it.");
+
+            Console.WriteLine("Please enter a whole number!");
+            string answer2 = Console.ReadLine();
+            Console.WriteLine($"The sum of the individual digits of {answer2} is {SumOfDigits(answer2)}!");
         }
         static int CountNumberOfSpaces(string sentence)
         {
@@ -30,7 +34,7 @@ namespace Loops_DeBord_Joshua
             {
                 sum += (int)Char.GetNumericValue(digit);
             }
-
+            return sum;
             
         }
     }
